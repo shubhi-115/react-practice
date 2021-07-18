@@ -6,6 +6,7 @@ const App = ()=>{
     const [passwordWant,setPasswordWant]=useState(true);
     return(
         <div className="container">
+        <h1>Hey Beenu kaisa hai re</h1>
         <input
         type="text" placeholder="Enter your username" value={username} onChange={(e)=>{setUsername(e.target.value)}}/>
         <input
