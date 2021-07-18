@@ -1,20 +1,16 @@
-import React,{useState} from 'react';
+import React from 'react';
+import Random from './components/Random_v1'
+import Tag from './components/Tag_v1'
 import './App.css'
-const App = ()=>{
-    const [username,setUsername]=useState('');
-    const [password,setPassword] = useState('');
-    const [passwordWant,setPasswordWant]=useState(true);
+const App = () =>{
     return(
-        <div className="container">
-        <h1>Hey Beenu kaisa hai re</h1>
-        <input
-        type="text" placeholder="Enter your username" value={username} onChange={(e)=>{setUsername(e.target.value)}}/>
-        <input
-        type={passwordWant===true ? 'text': 'password'} placeholder="Enter your password" value={password} onChange={(e)=>{setPassword(e.target.value)}}/>
-        <h2>{username}</h2>
-        <h3>{passwordWant===true ? password : '*'.repeat(password.length)}</h3>
-        <button onClick={(e)=>setPasswordWant(!passwordWant)}>Show/Hide your password</button>
-        </div>
+   <div>
+       <h1>Love you Anand</h1>
+   <div className="main-container">
+    <Random/>
+    <Tag/>
+   </div>
+   </div>
     )
 }
 export default App;
