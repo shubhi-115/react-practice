@@ -10,7 +10,7 @@ const Tag = () => {
         <div className="container">
             <h1>Random {tag} Gif</h1>
             <img width="500" src={gif} alt="Random Gif" />
-            <input value={tag} onChange={(e) => setTag(e.target.value)} />
+            <input type = "text" value={tag} onChange={(e) => setTag(e.target.value)} placeholder="Type your own tag here" />
             <button onClick={() => fetchGif(tag)}>CLICK FOR NEW</button>
         </div>
     );
